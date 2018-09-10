@@ -31,7 +31,7 @@ class Sorter {
     var arr=[];
     for(var i=0; i<indices.length; i++){arr.push(this.array[indices[i]]);}
     arr.sort(this.compareFunc);
-    for(var j=0;j<indices.length;j++){this.array.splice(indices[j],1 arr[j]);}
+    for(var j=0;j<indices.length;j++){this.array.splice(indices[j],1, arr[j]);}
   }
 
   setComparator(compareFunction) {
